@@ -8,8 +8,8 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     wakeButton.disabled = true;
     wakeButton.classList.add('disabled');
 
-    // Показать сообщение о том, что Дежурный услышал
-    message.textContent = 'Дежурный услышал и скоро проснется...';
+    // Показать сообщение о том, что Уникум-Бот услышал
+    message.textContent = 'Уникум-Бот услышал и скоро проснется...';
     sendGetRequest();
 
     // Обновление прогресс-бара
@@ -25,16 +25,16 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     }, 1200); // Обновляем каждые 1200 миллисекунд
 
     setTimeout(function() {
-        sleepImage.src = 'wakeup.png'; // URL для изображения проснувшегося Дежурный
-        sleepImage.alt = 'Просыпающийся Дежурный';
-        message.textContent = 'Дежурный просыпается! Еще совсем чуть-чуть';
+        sleepImage.src = 'wakeup.png'; // URL для изображения проснувшегося Уникум-Бот
+        sleepImage.alt = 'Просыпающийся Уникум-Бот';
+        message.textContent = 'Уникум-Бот просыпается! Еще совсем чуть-чуть';
     }, 4000); // 4000 миллисекунд = 4 секунд
 
     // Через 30 секунд поменять изображение и сообщение
     setTimeout(function() {
-        sleepImage.src = 'work.png'; // URL для изображения проснувшегося Дежурный
-        sleepImage.alt = 'Проснувшийся Дежурный';
-        message.textContent = 'Дежурный проснулся!';
+        sleepImage.src = 'work.png'; // URL для изображения проснувшегося Уникум-Бот
+        sleepImage.alt = 'Проснувшийся Уникум-Бот';
+        message.textContent = 'Уникум-Бот проснулся!';
     }, 9000); // 9000 миллисекунд = 9 секунд
 
     setTimeout(function() {
